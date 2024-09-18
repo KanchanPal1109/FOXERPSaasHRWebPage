@@ -1,0 +1,6 @@
+2024-09-17 15:13:48,323 ERROR frappe New Exception collected with id: 2024-09-17 15:13:48.191143-127.0.0.1-daa
+Site: saas_site
+Form Dict: {'cmd': 'fox_erp_saas.api.get_employee_list'}
+2024-09-17 15:15:27,327 ERROR frappe New Exception collected with id: 2024-09-17 15:15:27.314903-127.0.0.1-c01
+Site: saas_site
+Form Dict: {'cmd': 'fox_erp_saas.api.get_employee_list'}

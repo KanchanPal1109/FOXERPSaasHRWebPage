@@ -1,0 +1,125 @@
+2024-09-17 11:28:08,707 DEBUG cd forerpsaas_bench && python3 -m venv env
+2024-09-17 11:28:10,421 DEBUG cd forerpsaas_bench && /home/kanchanfrappe/forerpsaas_bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-09-17 11:28:12,244 DEBUG cd forerpsaas_bench && /home/kanchanfrappe/forerpsaas_bench/env/bin/python -m pip install --quiet wheel
+2024-09-17 11:28:16,212 LOG Getting frappe
+2024-09-17 11:28:16,213 DEBUG cd forerpsaas_bench/apps && git clone https://github.com/leadergroupsaudi/frappe.git --branch version-14 --depth 1 --origin upstream
+2024-09-17 11:28:25,295 LOG Installing frappe
+2024-09-17 11:28:25,295 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && /home/kanchanfrappe/forerpsaas_bench/env/bin/python -m pip install --quiet --upgrade -e /home/kanchanfrappe/forerpsaas_bench/apps/frappe 
+2024-09-17 11:28:59,574 DEBUG cd /home/kanchanfrappe/forerpsaas_bench/apps/frappe && yarn install --check-files
+2024-09-17 11:29:36,093 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe:
+2024-09-17 11:29:38,497 WARNING cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe: executed with exit code 7
+2024-09-17 11:29:38,497 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-17 11:29:38,497 DEBUG cd forerpsaas_bench && bench build
+2024-09-17 11:29:38,557 INFO /usr/local/bin/bench build
+2024-09-17 11:29:48,443 LOG setting up backups
+2024-09-17 11:29:48,451 LOG backups were set up
+2024-09-17 11:29:48,451 INFO Bench forerpsaas_bench initialized
+2024-09-17 11:29:49,398 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:31:20,164 INFO /usr/local/bin/bench new-site fox_erp_saas_site --db-name fox_erp_db
+2024-09-17 11:32:33,242 INFO /usr/local/bin/bench --site fox_erp_saas_site scheduler enable
+2024-09-17 11:36:00,899 INFO /usr/local/bin/bench get-app --branch version-14 erpnext https://github.com/leadergroupsaudi/erpnext
+2024-09-17 11:36:00,905 LOG Getting erpnext
+2024-09-17 11:36:00,905 DEBUG cd ./apps && git clone https://github.com/leadergroupsaudi/erpnext --branch version-14 --depth 1 --origin upstream
+2024-09-17 11:36:11,486 LOG Installing erpnext
+2024-09-17 11:36:11,486 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && /home/kanchanfrappe/forerpsaas_bench/env/bin/python -m pip install --quiet --upgrade -e /home/kanchanfrappe/forerpsaas_bench/apps/erpnext 
+2024-09-17 11:36:20,238 DEBUG cd /home/kanchanfrappe/forerpsaas_bench/apps/erpnext && yarn install --check-files
+2024-09-17 11:36:20,545 DEBUG bench build --app erpnext
+2024-09-17 11:36:20,611 INFO /usr/local/bin/bench build --app erpnext
+2024-09-17 11:36:25,120 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe:
+2024-09-17 11:36:27,530 WARNING cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe: executed with exit code 7
+2024-09-17 11:36:27,530 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-17 11:36:28,349 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:36:30,135 INFO /usr/local/bin/bench --site fox_erp_saas_site install-app erpnext
+2024-09-17 11:36:58,616 INFO /usr/local/bin/bench get-app --branch version-14 payments https://github.com/leadergroupsaudi/payments
+2024-09-17 11:36:58,623 LOG Getting payments
+2024-09-17 11:36:58,623 DEBUG cd ./apps && git clone https://github.com/leadergroupsaudi/payments --branch version-14 --depth 1 --origin upstream
+2024-09-17 11:37:01,356 LOG Installing payments
+2024-09-17 11:37:01,356 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && /home/kanchanfrappe/forerpsaas_bench/env/bin/python -m pip install --quiet --upgrade -e /home/kanchanfrappe/forerpsaas_bench/apps/payments 
+2024-09-17 11:37:04,513 DEBUG bench build --app payments
+2024-09-17 11:37:04,576 INFO /usr/local/bin/bench build --app payments
+2024-09-17 11:37:08,442 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe:
+2024-09-17 11:37:10,840 WARNING cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe: executed with exit code 7
+2024-09-17 11:37:10,840 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-17 11:37:11,670 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:37:11,752 INFO /usr/local/bin/bench –site fox_erp_saas_site install-app payments
+2024-09-17 11:37:11,901 INFO /usr/local/bin/bench get-app --branch version-14 hrms https://github.com/leadergroupsaudi/hrms
+2024-09-17 11:37:11,906 LOG Getting hrms
+2024-09-17 11:37:11,906 DEBUG cd ./apps && git clone https://github.com/leadergroupsaudi/hrms --branch version-14 --depth 1 --origin upstream
+2024-09-17 11:37:17,419 LOG Installing hrms
+2024-09-17 11:37:17,420 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && /home/kanchanfrappe/forerpsaas_bench/env/bin/python -m pip install --quiet --upgrade -e /home/kanchanfrappe/forerpsaas_bench/apps/hrms 
+2024-09-17 11:37:18,606 DEBUG bench build --app hrms
+2024-09-17 11:37:18,667 INFO /usr/local/bin/bench build --app hrms
+2024-09-17 11:37:22,723 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe:
+2024-09-17 11:37:25,139 WARNING cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe: executed with exit code 7
+2024-09-17 11:37:25,139 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-17 11:37:25,900 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:37:25,979 INFO /usr/local/bin/bench –site fox_erp_saas_site install-app hrms
+2024-09-17 11:37:36,463 INFO /usr/local/bin/bench new-app fox_erp_saas
+2024-09-17 11:37:36,467 LOG creating new app fox_erp_saas
+2024-09-17 11:38:07,674 LOG Installing fox_erp_saas
+2024-09-17 11:38:07,675 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && /home/kanchanfrappe/forerpsaas_bench/env/bin/python -m pip install --quiet --upgrade -e /home/kanchanfrappe/forerpsaas_bench/apps/fox_erp_saas 
+2024-09-17 11:38:09,424 DEBUG bench build --app fox_erp_saas
+2024-09-17 11:38:09,485 INFO /usr/local/bin/bench build --app fox_erp_saas
+2024-09-17 11:38:13,356 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe:
+2024-09-17 11:38:15,766 WARNING cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe: executed with exit code 7
+2024-09-17 11:38:15,767 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-17 11:38:16,889 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:38:44,859 INFO /usr/local/bin/bench --site fox_erp_saas_site install-app fox_erp_saas
+2024-09-17 11:38:50,201 INFO /usr/local/bin/bench start
+2024-09-17 11:38:50,346 INFO /usr/local/bin/bench watch
+2024-09-17 11:38:50,350 INFO /usr/local/bin/bench serve --port 8004
+2024-09-17 11:38:50,365 INFO /usr/local/bin/bench worker
+2024-09-17 11:38:50,366 INFO /usr/local/bin/bench schedule
+2024-09-17 11:39:16,228 INFO /usr/local/bin/bench use forerpsaas_bench
+2024-09-17 11:39:23,089 INFO /usr/local/bin/bench start
+2024-09-17 11:39:23,233 INFO /usr/local/bin/bench serve --port 8004
+2024-09-17 11:39:23,233 INFO /usr/local/bin/bench watch
+2024-09-17 11:39:23,237 INFO /usr/local/bin/bench worker
+2024-09-17 11:39:23,266 INFO /usr/local/bin/bench schedule
+2024-09-17 11:39:49,642 INFO /usr/local/bin/bench clear cache
+2024-09-17 11:40:32,557 INFO /usr/local/bin/bench clear-cache
+2024-09-17 11:40:50,150 INFO /usr/local/bin/bench clear-cache --site fox_erp_saas_site
+2024-09-17 11:41:24,805 INFO /usr/local/bin/bench clear-cache --all
+2024-09-17 11:41:38,905 INFO /usr/local/bin/bench --site fox_erp_saas_site clear-cache
+2024-09-17 11:42:50,981 INFO /usr/local/bin/bench start
+2024-09-17 11:42:51,127 INFO /usr/local/bin/bench watch
+2024-09-17 11:42:51,130 INFO /usr/local/bin/bench serve --port 8004
+2024-09-17 11:42:51,135 INFO /usr/local/bin/bench schedule
+2024-09-17 11:42:51,159 INFO /usr/local/bin/bench worker
+2024-09-17 11:46:46,832 INFO /usr/local/bin/bench new-site saas_site --db-name saas_db
+2024-09-17 11:47:13,872 INFO /usr/local/bin/bench --site saas_site scheduler enable
+2024-09-17 11:48:09,793 INFO /usr/local/bin/bench get-app --branch version-14 erpnext https://github.com/leadergroupsaudi/erpnext
+2024-09-17 11:48:21,258 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:48:23,140 INFO /usr/local/bin/bench --site saas_site install-app erpnext
+2024-09-17 11:48:50,482 INFO /usr/local/bin/bench get-app --branch version-14 payments https://github.com/leadergroupsaudi/payments
+2024-09-17 11:49:02,630 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:49:02,714 INFO /usr/local/bin/bench –site saas_site install-app payments
+2024-09-17 11:49:02,866 INFO /usr/local/bin/bench get-app --branch version-14 hrms https://github.com/leadergroupsaudi/hrms
+2024-09-17 11:49:07,340 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:49:07,416 INFO /usr/local/bin/bench –site saas_site install-app hrms
+2024-09-17 11:49:50,079 INFO /usr/local/bin/bench use saas_site
+2024-09-17 11:49:55,675 INFO /usr/local/bin/bench start
+2024-09-17 11:49:55,822 INFO /usr/local/bin/bench worker
+2024-09-17 11:49:55,823 INFO /usr/local/bin/bench watch
+2024-09-17 11:49:55,829 INFO /usr/local/bin/bench serve --port 8004
+2024-09-17 11:49:55,838 INFO /usr/local/bin/bench schedule
+2024-09-17 11:52:44,427 INFO /usr/local/bin/bench --site saas_site install fox_erp_saas
+2024-09-17 11:52:44,434 WARNING /usr/local/bin/bench --site saas_site install fox_erp_saas executed with exit code 2
+2024-09-17 11:52:45,450 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:54:56,188 INFO /usr/local/bin/bench
+2024-09-17 11:55:06,374 INFO /usr/local/bin/bench --site saas_site install fox_erp_saas
+2024-09-17 11:55:06,376 WARNING /usr/local/bin/bench --site saas_site install fox_erp_saas executed with exit code 2
+2024-09-17 11:55:07,375 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-17 11:56:33,946 INFO /usr/local/bin/bench --site saas_site install-app fox_erp_saas
+2024-09-17 12:00:01,842 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-17 12:09:10,386 INFO /usr/local/bin/bench migrate
+2024-09-17 12:17:33,461 INFO /usr/local/bin/bench migrate
+2024-09-17 13:29:40,388 INFO /usr/local/bin/bench migrate
+2024-09-17 17:37:30,084 INFO /usr/local/bin/bench –site saas_site install-app hrms
+2024-09-17 17:40:51,684 INFO /usr/local/bin/bench --site saas_site install-app hrms
+2024-09-17 18:00:01,630 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-18 09:54:05,423 INFO /usr/local/bin/bench start
+2024-09-18 09:54:05,710 INFO /usr/local/bin/bench serve --port 8004
+2024-09-18 09:54:05,712 INFO /usr/local/bin/bench schedule
+2024-09-18 09:54:05,714 INFO /usr/local/bin/bench watch
+2024-09-18 09:54:05,719 INFO /usr/local/bin/bench worker
