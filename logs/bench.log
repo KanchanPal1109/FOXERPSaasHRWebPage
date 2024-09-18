@@ -123,3 +123,4 @@
 2024-09-18 09:54:05,712 INFO /usr/local/bin/bench schedule
 2024-09-18 09:54:05,714 INFO /usr/local/bin/bench watch
 2024-09-18 09:54:05,719 INFO /usr/local/bin/bench worker
+2024-09-18 12:00:01,278 INFO /usr/local/bin/bench --verbose --site all backup

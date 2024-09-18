@@ -1,0 +1,9 @@
+{
+ "db_name": "saas_db",
+ "db_password": "FeYOyQHtjiu1n84r",
+ "db_type": "mariadb",
+ "developer_mode": 1,
+ "user_type_doctype_limit": {
+  "employee_self_service": 30
+ }
+}
