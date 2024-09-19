@@ -124,3 +124,45 @@
 2024-09-18 09:54:05,714 INFO /usr/local/bin/bench watch
 2024-09-18 09:54:05,719 INFO /usr/local/bin/bench worker
 2024-09-18 12:00:01,278 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-18 14:05:09,453 INFO /usr/local/bin/bench migrate
+2024-09-18 14:05:22,541 INFO /usr/local/bin/bench start
+2024-09-18 14:05:22,685 INFO /usr/local/bin/bench schedule
+2024-09-18 14:05:22,686 INFO /usr/local/bin/bench serve --port 8004
+2024-09-18 14:05:22,687 INFO /usr/local/bin/bench worker
+2024-09-18 14:05:22,704 INFO /usr/local/bin/bench watch
+2024-09-18 17:57:58,921 INFO /usr/local/bin/bench use saas_site
+2024-09-18 17:58:01,615 INFO /usr/local/bin/bench start
+2024-09-18 17:58:01,774 INFO /usr/local/bin/bench worker
+2024-09-18 17:58:01,774 INFO /usr/local/bin/bench schedule
+2024-09-18 17:58:01,784 INFO /usr/local/bin/bench watch
+2024-09-18 17:58:01,805 INFO /usr/local/bin/bench serve --port 8004
+2024-09-18 18:00:01,518 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-18 18:10:18,953 INFO /usr/local/bin/bench start
+2024-09-18 18:10:19,095 INFO /usr/local/bin/bench watch
+2024-09-18 18:10:19,095 INFO /usr/local/bin/bench schedule
+2024-09-18 18:10:19,096 INFO /usr/local/bin/bench serve --port 8004
+2024-09-18 18:10:19,107 INFO /usr/local/bin/bench worker
+2024-09-19 10:26:51,068 INFO /usr/local/bin/bench use saas_site
+2024-09-19 10:26:58,117 INFO /usr/local/bin/bench start
+2024-09-19 10:26:58,415 INFO /usr/local/bin/bench worker
+2024-09-19 10:26:58,415 INFO /usr/local/bin/bench serve --port 8004
+2024-09-19 10:26:58,433 INFO /usr/local/bin/bench watch
+2024-09-19 10:26:58,464 INFO /usr/local/bin/bench schedule
+2024-09-19 11:37:47,091 INFO /usr/local/bin/bench migrate
+2024-09-19 12:00:01,751 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-19 13:52:22,389 INFO /usr/local/bin/bench clear-cache
+2024-09-19 13:52:29,632 INFO /usr/local/bin/bench restart
+2024-09-19 13:52:34,004 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe:
+2024-09-19 13:52:36,801 WARNING cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe: executed with exit code 7
+2024-09-19 13:52:36,801 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-09-19 13:52:37,970 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-19 13:59:53,799 INFO /usr/local/bin/bench migrate
+2024-09-19 14:20:12,926 INFO /usr/local/bin/bench clear-cache
+2024-09-19 14:20:17,383 INFO /usr/local/bin/bench migrate
+2024-09-19 15:02:33,143 INFO /usr/local/bin/bench migrate
+2024-09-19 15:02:39,633 INFO /usr/local/bin/bench restart
+2024-09-19 15:02:44,298 DEBUG cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe:
+2024-09-19 15:02:46,706 WARNING cd /home/kanchanfrappe/forerpsaas_bench && sudo supervisorctl restart frappe: executed with exit code 7
+2024-09-19 15:02:46,706 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-09-19 15:02:47,745 INFO A newer version of bench is available: 5.22.3 → 5.22.9
+2024-09-19 15:16:56,789 INFO /usr/local/bin/bench migrate
