@@ -139,3 +139,12 @@ fatal: No remote configured to list refs from.
   return_val = func(*args, **kwargs)
 /home/kanchanfrappe/forerpsaas_bench/apps/frappe/frappe/utils/caching.py:57: DeprecationWarning: `frappe_last` argument is deprecated and will be removed in v15.
   return_val = func(*args, **kwargs)
+/home/kanchanfrappe/forerpsaas_bench/apps/frappe/frappe/utils/caching.py:57: DeprecationWarning: `frappe_last` argument is deprecated and will be removed in v15.
+  return_val = func(*args, **kwargs)
+/home/kanchanfrappe/forerpsaas_bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+fatal: No remote configured to list refs from.
+/home/kanchanfrappe/forerpsaas_bench/apps/frappe/frappe/utils/caching.py:57: DeprecationWarning: `frappe_last` argument is deprecated and will be removed in v15.
+  return_val = func(*args, **kwargs)
+/home/kanchanfrappe/forerpsaas_bench/apps/frappe/frappe/utils/caching.py:57: DeprecationWarning: `frappe_last` argument is deprecated and will be removed in v15.
+  return_val = func(*args, **kwargs)

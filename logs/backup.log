@@ -28,3 +28,9 @@ Backup Summary for saas_site at 2024-09-19 12:00:03.519785
 Config  : ./saas_site/private/backups/20240919_120002-saas_site-site_config_backup.json 170.0B
 Database: ./saas_site/private/backups/20240919_120002-saas_site-database.sql.gz         1.3MiB
 Backup for Site saas_site has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u saas_db -p********** saas_db -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./saas_site/private/backups/20240919_180002-saas_site-database.sql.gz
+
+Backup Summary for saas_site at 2024-09-19 18:00:03.518028
+Config  : ./saas_site/private/backups/20240919_180002-saas_site-site_config_backup.json 170.0B
+Database: ./saas_site/private/backups/20240919_180002-saas_site-database.sql.gz         1.3MiB
+Backup for Site saas_site has been successfully completed
